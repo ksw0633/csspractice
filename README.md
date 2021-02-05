@@ -1,2 +1,2 @@
 # csspractice
-csspractice
+css is case sensitive
