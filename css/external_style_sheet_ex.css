@@ -1,0 +1,5 @@
+p                           /* css file doesn' need <style> tag (its illegal) */
+{
+    color: blue;
+    background-color: yellow;
+}

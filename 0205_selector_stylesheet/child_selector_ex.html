@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abox>p                         /* the child selector will only affect the child not its descendants */
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="abox">
+        <p>a</p>
+        <ul>
+            <li><p>c</p></li>
+            <li><p>d</p></li>
+        </ul>
+        <p>e</p>
+    </div> 
+    <p>f</p>  
+</body>
+</html>

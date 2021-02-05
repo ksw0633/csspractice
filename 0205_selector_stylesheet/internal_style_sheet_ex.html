@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <style>
+        p
+        {
+            color: red;                                     
+        }
+    </style> --> <!-- this is internal stylesheet-->
+    <!--<link rel="stylesheet" href="./css/external_style_sheet_ex.css">-->   <!-- external stylesheets need to be linked as stylesheet relation-->
+    <style>
+        @import url("css/external_style_sheet_ex.css");                       /* another way of linking external stylesheet but rarely used */
+    </style>
+</head>
+<body>
+    <p>do you remeber</p>
+    <p style="color: red; background-color: aqua;">21st night of september</p>  <!-- this is inline stylesheet -->
+</body>                                                                             <!-- inline has the highest priority, and the rest depends on which one is first on the script -->
+</html>

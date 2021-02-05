@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 10px;
+        }
+        #container
+        {
+            background: lightgray;
+        }
+        h1
+        {
+            background: beige;
+        }
+        span
+        {
+            color: red;
+        }
+        h2+p>span
+        {
+            color: blue;
+        }
+        .tea1
+        {
+            background: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>hi</h1>
+    <div id="container">
+        <h2>a</h2>
+        <p><span>b</span></p>
+        c
+        <ul>
+            <li class="tea1">
+                <h3>c</h3>
+                <span>d</span>
+                <p>e</p>
+            </li>
+            <li class="tea2">
+                <h3>f</h3>
+                <span>g</span>
+                <p>h</p>
+            </li>
+            <li class="tea3">
+                <h3>i</h3>
+                <span>j</span>
+                <p>k</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
