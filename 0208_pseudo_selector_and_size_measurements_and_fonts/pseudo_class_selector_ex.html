@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li
+        {
+            display: inline-block;
+            border: 1px solid;
+            width: 100px;
+            text-align: center;
+        }
+        a
+        {
+            display: inline-block;
+            color: green;
+            text-decoration: none;
+            width: 100%;
+        }
+        a:link {color: green;}      /* unvisited(default) elements */
+        a:visited {color : green;} /* visited elements */
+        a:hover 
+        {
+            color: red;
+            text-decoration: underline;
+            background-color: gray;
+            border-radius: 20%;
+        }       /* hover is a pseudo class for when the mouse cursor is hovering the element */
+        a:active {color : blue;}    /* active(clicked) elements */
+        a:focus {background-color: burlywood;} /* when on focus (such as tab) */   /* priority of these 5 is top to down */
+        #gallery
+        {
+            width: 200px;
+            height: 230px;
+            border: 1px solid;
+            position: relative;
+            overflow: hidden;
+            background-image: url(../root/img/test/whitestar.jpg);
+        }
+        #gallery:hover>p /* when gallery is hovered p will */
+        {
+            left: 0;
+
+        }
+        #gallery>p
+        {
+            position: absolute;
+            bottom: 0;
+            left: 200px;
+            border: 1px solid gray;
+            width: 300px;
+            transition: left 1s;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">a</a></li>
+        <li><a href="#">b</a></li>
+        <li><a href="#">c</a></li>
+        <li><a href="#">d</a></li>
+        <li><a href="#">e</a></li>
+    </ul>
+    <div id="gallery">
+        <p>do you remember</p>
+    </div>
+</body>
+    </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:nth-child(1)
+        {
+            background-color: red;
+            border: 1px solid red;
+        }
+        #wrap>img:nth-child(3)          /* nth child means the nth of the sibling(not the child) */
+        {
+           border: 1px solid red; 
+        }
+        p:before                    /* before goes in the head of the content */
+        {
+            content: "hello";
+        }
+        #wrap:after                 /* after goes in the tail of the content */
+        {
+            content: "bye";
+            color : magenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>title</h1>
+    <div id="wrap">
+        <p>a</p>
+        <p>b</p>
+        <img src="0">
+    </div>
+    <p>
+        c
+    </p>
+</body>
+</html>
