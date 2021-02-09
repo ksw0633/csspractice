@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shadow1
+        {
+            font: 30px "Arial Black";
+            text-shadow: 4px 4px rgba(100,100,0,0.6);
+            transition: all 0.6s;
+        }
+        .shadow1:hover
+        {
+            text-shadow: 4px 4px rgba(255,100,0,1.0);
+        }
+        @keyframes my_animation
+        {
+            0%{text-shadow: 4px 4px rgba(100,100,0,0.6);}
+            50%{text-shadow: 4px 4px rgba(255,100,0,1.0);}
+            100%{text-shadow: 4px 4px rgba(100,100,0,0.6);}
+        }
+        .shadow2
+        {
+            font: 30px "Arial Black";
+            text-shadow: 4px 4px rgba(100,100,0,0.6);
+            color: #135;
+            transition: all 0.6s;
+        }
+        .shadow2:hover
+        {
+            color: white;
+            text-shadow: 2px 2px #246,
+                3px 3px #357,
+                4px 4px #468,
+                5px 5px #579,
+                6px 6px #68a,
+                7px 7px #79b,
+                8px 8px #8ac;            
+        }
+        p {text-shadow: 2px 3px 5px rgba(100,100,0,0.6)}
+    </style>
+</head>
+<body>
+    <h2 class="shadow1">SHADOW EFFECT</h2>
+    <h2 class="shadow2">TEXT SHADOW</h2>
+    <p>do you remeber the 21st 
+        night of september
+    </p>   
+</body>
+</html>
