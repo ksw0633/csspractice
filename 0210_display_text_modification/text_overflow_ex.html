@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul, li, h3
+        {
+            margin: 0;
+            padding: 0;
+        }
+        a
+        {
+            display: block;
+            text-decoration: none;
+            color: darkblue;
+        }
+        .notice a h3
+        {
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;   /* the text-overflow determines what symbols to use when text is overflowed */
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="notice">
+        <li>
+            <a href="#">
+                <h3>deja vu i've just been in this place before</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h3>higher on the street and i know it's my time to go</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h3>calling you, and the search is a mystery</h3>
+            </a>
+        </li>
+    </ul>   
+</body>
+</html>
